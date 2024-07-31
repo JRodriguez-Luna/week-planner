@@ -4,7 +4,6 @@
 
 table {
   border-collapse: collapse;
-  border: 2px solid rgb(140 140 140);
   font-family: sans-serif;
   font-size: 0.8rem;
   letter-spacing: 1px;
@@ -14,12 +13,38 @@ thead {
   text-align: left;
 }
 
+th {
+  padding: 10px 0 5px 5px;
+}
+
+td {
+  padding-bottom: 40px;
+}
+
 th,
 td {
-  border: 1px solid rgb(160 160 160);
-  padding: 10px;
+  border: 1px solid rgb(212, 212, 212);
+}
+
+.custom-button {
+  background-color: #757b81;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  padding: 10px 15px;
+  margin: 20px 0;
+}
+
+tbody > tr:nth-child(odd) {
+  background-color: rgb(222, 222, 222);
+}
+
+#day-of-week {
+  border-color: #dedede;
+  border-radius: 10px;
+  padding: 5px;
 }
 
 #select-day-wrap {
-  margin: 10% 0;
+  margin: 7% 0;
 }
