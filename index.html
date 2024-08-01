@@ -6,12 +6,26 @@
     <title>Week Planner</title>
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/layout.css" />
+    <!-- Google Font Pair -->
+    <!-- Poppins Font - Header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet" />
+
+    <!-- Raleway Font - Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet" />
   </head>
   <body>
     <header>
       <div class="container center">
         <div class="row">
-          <div class="column">
+          <div class="column header-font">
             <h1>Weekly Planner</h1>
             <h2>Choose day to show Event</h2>
           </div>
@@ -24,7 +38,7 @@
         <!-- Day of Week -->
         <div class="row">
           <div class="column center" id="select-day-wrap">
-            <label for="day-of-week">Day of Week:</label>
+            <label for="day-of-week" class="header-font">Day of Week:</label>
             <div class="selection">
               <select name="days" id="day-of-week">
                 <option value="">-- Choose a day --</option>
@@ -59,37 +73,13 @@
                   <th scope="col">Actions</th>
                 </tr>
               </thead>
-
-              <tbody>
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-
-                <tr>
-                  <td></td>
-                  <td></td>
-                  <td></td>
-                </tr>
-              </tbody>
+              <tbody></tbody>
             </table>
           </div>
         </div>
       </div>
     </main>
-    <script src="main.js"></script>
+    <script src="ts/data.js"></script>
+    <script src="ts/main.js"></script>
   </body>
 </html>
