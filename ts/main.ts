@@ -1,7 +1,7 @@
-interface Entry {
-  title: string;
-  event: string;
-}
+// interface Entry {
+//   title: string;
+//   event: string;
+// }
 
 const $table = document.querySelector('tbody');
 const $modalInput = document.querySelector('.modal-container') as HTMLDialogElement;
