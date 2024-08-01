@@ -40,7 +40,7 @@
           <div class="column center" id="select-day-wrap">
             <label for="day-of-week" class="header-font">Day of Week:</label>
             <div class="selection">
-              <select name="days" id="day-of-week">
+              <select name="days" class="day-of-week">
                 <option value="">-- Choose a day --</option>
                 <option value="monday">Monday</option>
                 <option value="tuesday">Tuesday</option>
@@ -57,7 +57,37 @@
         <!-- Button -->
         <div class="row">
           <div class="column center">
-            <button class="custom-button">Add New Event</button>
+            <button type="button" class="custom-button" id="add-new-event">Add New Event</button>
+            <dialog class="modal-container">
+              <form class="form-container">
+                <!-- Tittle Modal -->
+                <label for="title">Title</label>
+                <div>
+                  <input type="text" name="title" />
+                </div>
+
+                <!-- Day of Week Modal-->
+                <label for="day-of-week">Day of Week</label>
+                <div>
+                  <select name="days" class="day-of-week">
+                    <option value="">-- Choose a day --</option>
+                    <option value="monday">Monday</option>
+                    <option value="tuesday">Tuesday</option>
+                    <option value="wednesday">Wednesday</option>
+                    <option value="thursday">Thursday</option>
+                    <option value="friday">Friday</option>
+                    <option value="saturday">Saturday</option>
+                    <option value="sunday">Sunday</option>
+                  </select>
+                </div>
+
+                <!-- Description Modal-->
+                <label for="event-info">Event Information</label>
+                <div>
+                  <textarea name="info" id="info" cols="30" rows="10"></textarea>
+                </div>
+              </form>
+            </dialog>
           </div>
         </div>
 

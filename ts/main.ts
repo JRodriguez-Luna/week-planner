@@ -1,10 +1,18 @@
-// interface Entry {
-//   title: string;
-//   event: string;
-// }
+interface Entry {
+  title: string;
+  event: string;
+}
 
 const $table = document.querySelector('tbody');
-console.log($table);
+const $modalInput = document.querySelector('.modal-container') as HTMLDialogElement;
+const $addNewEventButton = document.querySelector('#add-new-event');
+
+// Modal section
+$addNewEventButton.addEventListener('click', () => {
+  $modalInput.showModal();
+});
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   if (!$table) throw new Error('$tbody did not query!');

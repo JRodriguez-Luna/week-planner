@@ -8,6 +8,11 @@ body {
   font-weight: 500;
 }
 
+.form-container,
+.center {
+  text-align: left;
+}
+
 .center {
   text-align: center;
 }
@@ -23,17 +28,18 @@ thead {
   text-align: left;
 }
 
-th {
+th,
+td {
   padding: 10px 0 5px 5px;
+  border: 1px solid rgb(212, 212, 212);
 }
 
 td {
   padding-bottom: 40px;
 }
 
-th,
-td {
-  border: 1px solid rgb(212, 212, 212);
+tbody > tr:nth-child(odd) {
+  background-color: rgb(222, 222, 222);
 }
 
 .custom-button {
@@ -45,10 +51,6 @@ td {
   margin: 20px 0;
 }
 
-tbody > tr:nth-child(odd) {
-  background-color: rgb(222, 222, 222);
-}
-
 #day-of-week {
   border-color: #dedede;
   border-radius: 10px;
@@ -57,4 +59,17 @@ tbody > tr:nth-child(odd) {
 
 #select-day-wrap {
   margin: 7% 0;
+}
+
+/* Modal Section */
+.modal-container {
+  border-color: transparent;
+}
+
+.modal-container::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+#add-new-event {
+  cursor: pointer;
 }
