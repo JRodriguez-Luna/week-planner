@@ -1,9 +1,23 @@
+// interface Entry {
+//   title: string;
+//   event: string;
+// }
 var $table = document.querySelector('tbody');
-var $modalInput = document.querySelector('.modal-container');
 var $addNewEventButton = document.querySelector('#add-new-event');
+var $modalInput = document.querySelector('.modal-container');
+var $cancelBtn = document.querySelector('#cancel-button');
+var $confirmBtn = document.querySelector('#confirm-button');
+// If not found, throw error
+if (!$addNewEventButton)
+    throw new Error('$addNewEventButton did not query exist!');
 // Modal section
+// show
 $addNewEventButton.addEventListener('click', function () {
-    $modalInput.showModal();
+    $modalInput === null || $modalInput === void 0 ? void 0 : $modalInput.showModal();
+});
+// if user cancels, close modal
+$cancelBtn.addEventListener('click', function () {
+    $modalInput === null || $modalInput === void 0 ? void 0 : $modalInput.close();
 });
 document.addEventListener('DOMContentLoaded', function () {
     if (!$table)

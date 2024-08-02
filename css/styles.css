@@ -42,13 +42,21 @@ tbody > tr:nth-child(odd) {
   background-color: rgb(222, 222, 222);
 }
 
+/* Form Section */
+
+.custom-label {
+  margin: 5px 0 15px;
+  padding: 0;
+}
+
 .custom-button {
   background-color: #757b81;
   color: white;
   border-radius: 10px;
   border: none;
   padding: 10px 15px;
-  margin: 20px 0;
+  margin: 10px 0;
+  cursor: pointer;
 }
 
 #day-of-week {
@@ -72,4 +80,13 @@ tbody > tr:nth-child(odd) {
 
 #add-new-event {
   cursor: pointer;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#confirm-button {
+  background-color: rgb(66, 123, 66);
 }
